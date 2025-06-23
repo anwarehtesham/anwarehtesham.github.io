@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div id="navbar">
+<a href="/">Home</a>
+<a  href="/html/projects.html">Projects</a>
+<a href="/html/CV.html">CV</a>
+<a href="/html/publications.html">Publications</a>
+  <a class="active" href="/html/talks.html">Talks</a>
+</div>
+
+<div class="content">
+
+<h2><font color="#0020AD"><font size=+3>Talks</font></font></h2><br><br> 
+
+<font color="#0020AD"><font size=+0>09/04/2025:</font></font> Talk during the workshop "LabEx MateriAlps, Journée Modélisation et Théorie" in Grenoble (France) on "Forecasting Structure and Dynamics of Amorphous Materials"<br><br> 
+
+<font color="#0020AD"><font size=+0>02/04/2025:</font></font> Contributed talk during at the Conference on "Statistical Physics of Active Matter" in Paris (France) on "Kinetic Theory of Decentralized Learning for Smart Active Matter"<br><br> 
+
+<font color="#0020AD"><font size=+0>13/11/2024:</font></font> Invited talk during the workshop "AI4Science" in Beijing (China) on "Can Generative AI Models Efficiently Sample
+Deeply Supercooled Liquids?"<br><br> 
+
+<font color="#0020AD"><font size=+0>29/05/2024:</font></font> Talk during the workshop "Collective Motions of Animals and Robots" in Cargese (Corsica, France) on "From Decentralized Learning of Social Agents to Emergent Collective Behavior"<br><br> 
+
+<font color="#0020AD"><font size=+0>15/03/2024:</font></font> Seminar talk at Grenoble Glass Meeting (France) on "Can Normalizing Flows Efficiently Sample Deeply Supercooled Liquids?"<br><br> 
+
+<font color="#0020AD"><font size=+0>13/03/2024:</font></font> Group seminar at LPENS in Lyon (France) on "Coarse-Graining (Non-)Equilibrium Soft Matter Systems"<br><br> 
+
+<font color="#0020AD"><font size=+0>07/03/2024:</font></font> Invited Talk APS March Meeting Minneapolis (USA) on "Predicting Dynamic Heterogeneity at the Glass Transition Temperature using Machine Learning"<br><br> 
+
+<font color="#0020AD"><font size=+0>18/10/2023:</font></font> Group seminar at DLR in Cologne (Germany) on "Predicting Dynamic Heterogeneity at Tg using Physics-Inspired Machine Learning"<br><br> 
+
+<font color="#0020AD"><font size=+0>03/07/2023:</font></font> Group seminar at LIPhy in Grenoble (France) on "Machine Learning Techniques for Glass Physics (and Beyond)"<br><br> 
+
+<font color="#0020AD"><font size=+0>24/03/2023:</font></font> Theory colloquium in Innsbruck (Austria) on "Coarse-Graining Non-Equilibrium Soft Matter Systems"<br><br> 
+
+<font color="#0020AD"><font size=+0>15/02/2023:</font></font> Group seminar at ESPCI in Paris (France) on "Predicting Dynamic Heterogeneity in Glass-Forming Liquids"<br><br> 
+
+<font color="#0020AD"><font size=+0>16/12/2022:</font></font> Group seminar in Freiburg (Germany) on "Coarse-Graining Non-Equilibrium Soft Matter Systems"<br><br> 
+
+<font color="#0020AD"><font size=+0>15/11/2022:</font></font> Talk during the Simon's Collaboration Meeting in Venice (Italy) on "Predicting Dynamic Heterogeneity in Glass-Forming Liquids"<br><br> 
+
+<font color="#0020AD"><font size=+0>08/11/2022:</font></font> Talk during the workshop "Machine Learning Glassy Dynamics" in Paris (France) on "Predicting Dynamic Heterogeneity in
+Glass-Forming Liquids"<br> 
+
+<center><iframe width="620" height="415" allowfullscreen=""
+src="https://www.youtube.com/embed/3J5sSRzYBUE?start=329">
+</iframe></center>
+
+
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
